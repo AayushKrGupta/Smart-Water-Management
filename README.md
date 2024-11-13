@@ -1,4 +1,5 @@
 Smart Water Management Monitoring System
+
 This project is a Smart Water Management Monitoring System application that uses a REST API (Retrofit) to fetch sensor data from a database. The application monitors water tank levels, water usage, and other relevant metrics in real-time.
 
 Features
