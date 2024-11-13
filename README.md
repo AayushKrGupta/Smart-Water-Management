@@ -11,7 +11,7 @@ This project is a **Smart Water Management Monitoring System** application that 
 
 ## Technology Stack
 
-- **Android** (Java/Kotlin) - for developing the mobile application.
+- **Android** (Kotlin) - for developing the mobile application.
 - **Retrofit** - for HTTP requests to the REST API.
 - **REST API** - serves as the backend interface to retrieve data from the database.
 - **XML Layouts** - for designing the app's UI components.
@@ -21,8 +21,7 @@ This project is a **Smart Water Management Monitoring System** application that 
 The main components of this application are:
 
 1. **UI Components**:
-   - **Top Container**: Displays tank information including tank level chart, tank name, and capacity.
-   - **Bottom Container**: Uses a GridLayout to display other sensor values such as total capacity, usage liters, motor status, sump level, etc.
+   - **Middle Container**: Uses a Constrained GridLayout with a CardView Layout to display other sensor values such as total capacity, usage liters, motor status, sump level, etc.
 
 2. **Networking**:
    - **Retrofit Setup**: Manages HTTP requests to the REST API and maps responses to Java/Kotlin objects.
@@ -31,13 +30,6 @@ The main components of this application are:
 3. **Database**:
    - The database stores data gathered from sensors, which is fetched via the REST API.
 
-## Prerequisites
-
-Before running the project, ensure you have:
-
-- Android Studio installed.
-- An API endpoint with data available in JSON format.
-- The necessary API credentials (if authentication is required).
 
 ## Installation
 
