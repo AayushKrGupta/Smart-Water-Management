@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212b35"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Container for sections -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- TDS Value Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tdsCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardBackgroundColor="#2C3A47"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="16dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="TDS Value:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tdsValueTextView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:text="150 ppm"
+                    android:textColor="#00BCD4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="No new alerts."
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="101dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-5dp"
+                    android:src="@drawable/tds" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <WebView
+            android:id="@+id/tdsWebView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2C3A47"
+            android:visibility="gone" />
+
+        <!-- Temperature Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/temperatureCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardBackgroundColor="#2C3A47"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Temperature:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/temperatureValueTextView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:text="22°C"
+                    android:textColor="#00BCD4"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="No new alerts."
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="101dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-5dp"
+                    android:src="@drawable/temp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <WebView
+            android:id="@+id/temperatureWebView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2C3A47"
+            android:visibility="gone" />
+
+        <!-- Water Used Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/waterUsedCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardBackgroundColor="#2C3A47"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Water Used:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/waterUsedValueTextView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:text="500 Liters"
+                    android:textColor="#00BCD4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="No new alerts."
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="101dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-5dp"
+                    android:src="@drawable/water" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <WebView
+            android:id="@+id/waterUsedWebView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2C3A47"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
